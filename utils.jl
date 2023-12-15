@@ -1,3 +1,6 @@
+using Pkg
+Pkg.add("JuMP")
+Pkg.add("GLPK")
 using JuMP, GLPK
 
 function soma_ovrs(dic_jog_ovr::Dict{String,Float64},todos::NamedTuple)
