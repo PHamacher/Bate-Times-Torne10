@@ -1,4 +1,4 @@
-using JuMP, GLPK, DataFrames
+using JuMP, GLPK
 
 function soma_ovrs(dic_jog_ovr::Dict{String,Float64},todos::NamedTuple)
     ovrs = []
