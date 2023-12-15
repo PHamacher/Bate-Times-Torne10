@@ -183,12 +183,4 @@ $(times[:,3])
 $(times[:,4])
 """
 
-# ╔═╡ 00000000-0000-0000-0000-000000000001
-PLUTO_PROJECT_TOML_CONTENTS = """
-[deps]
-GLPK = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
-JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
-PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-
-"""
 
