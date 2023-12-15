@@ -17,6 +17,8 @@ end
 # ╔═╡ 489f24d9-91a3-4053-8f4e-c168c83ebe1e
 using PlutoUI
 
+include("utils.jl")
+
 # ╔═╡ 0116805a-7570-422c-a8ab-53e5f2495f8f
 jogadores = ["Murilo", "Almeida", "Felipe", "Coelho", "Vinisk", "Hama", "Bob", "Tuca", "Cingo", "Elabras", "Lucca", "Miguel", "Sommer", "Mello", "Joe M", "Joebo"]
 
