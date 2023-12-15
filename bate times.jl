@@ -190,9 +190,5 @@ GLPK = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
 JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
-[compat]
-GLPK = "~1.1.3"
-JuMP = "~1.17.0"
-PlutoUI = "~0.7.54"
 """
 
