@@ -15,7 +15,7 @@ macro bind(def, element)
 end
 
 # ╔═╡ 489f24d9-91a3-4053-8f4e-c168c83ebe1e
-using PlutoUI, JuMP, GLPK
+using PlutoUI
 
 # ╔═╡ 3c989e10-77c4-4da4-b8a1-e39658ae76a4
 
