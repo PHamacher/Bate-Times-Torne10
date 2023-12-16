@@ -10,7 +10,7 @@ n_pos = [0]
 def bate_times(ovrs, players, juntos, separados):
     media = sum(ovrs[0]) / len(ovrs[0])
     # Create the solver
-    solver = pywraplp.Solver.CreateSolver('GUROBI')
+    solver = pywraplp.Solver.CreateSolver('GLOP')
 
     # Variables
     x = {}
