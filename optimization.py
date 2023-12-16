@@ -1,7 +1,7 @@
 import streamlit as st
 from ortools.linear_solver import pywraplp
 
-todos = [["Murilo", "Almeida", "Felipe", "Coelho", "Vinisk", "Hama", "Bob", "Tuca", "Cingo", "Elabras", "Lucca", "Miguel", "Sommer", "Mello", "TT", "Joebo"]]
+default_todos = [["Murilo", "Almeida", "Felipe", "Coelho", "Vinisk", "Hama", "Bob", "Tuca", "Cingo", "Elabras", "Lucca", "Miguel", "Sommer", "Mello", "TT", "Joebo"]]
 Klis = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]]
 P = [0,1,2,3]
 n_pos = [0]
@@ -69,6 +69,32 @@ def get_teams(x, player_names, teams):
 
 # Streamlit app
 st.title('Batedor de Times oficial do Torne10')
+
+st.markdown("## Participantes")
+todos = []
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    todos.append(st.text_input("Jogador 1", value=default_todos[0][0]))
+    todos.append(st.text_input("Jogador 5", value=default_todos[0][4]))
+    todos.append(st.text_input("Jogador 9", value=default_todos[0][8]))
+    todos.append(st.text_input("Jogador 13", value=default_todos[0][12]))
+with col2:
+    todos.append(st.text_input("Jogador 2", value=default_todos[0][1]))
+    todos.append(st.text_input("Jogador 6", value=default_todos[0][5]))
+    todos.append(st.text_input("Jogador 10", value=default_todos[0][9]))
+    todos.append(st.text_input("Jogador 14", value=default_todos[0][13]))
+with col3:
+    todos.append(st.text_input("Jogador 3", value=default_todos[0][2]))
+    todos.append(st.text_input("Jogador 7", value=default_todos[0][6]))
+    todos.append(st.text_input("Jogador 11", value=default_todos[0][10]))
+    todos.append(st.text_input("Jogador 15", value=default_todos[0][14]))
+with col4:
+    todos.append(st.text_input("Jogador 4", value=default_todos[0][3]))
+    todos.append(st.text_input("Jogador 8", value=default_todos[0][7]))
+    todos.append(st.text_input("Jogador 12", value=default_todos[0][11]))
+    todos.append(st.text_input("Jogador 16", value=default_todos[0][15]))
+todos = [todos]
+
 st.markdown("## Escolha abaixo o nível de cada jogador na sua opinião")
 
 # Input for player overalls
